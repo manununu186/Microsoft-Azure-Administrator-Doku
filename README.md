@@ -188,3 +188,34 @@ Abonnements sind in Azure eine Einheit für die **Verwaltung, Abrechnung und Ska
 
 <img width="817" height="337" alt="brave_oqNCOPqwZb" src="https://github.com/user-attachments/assets/9062ad7e-5065-4069-a600-e0a13455cebe" />
 
+Für Azure ist ein Azure-Abonnement erforderlich. Ein Abonnement bietet authentifizierten und autorisierten Zugriff auf Azure-Produkte und -Dienste. Das Abo ermöglicht Bereitstellung von Ressourcen. Ein Azure-Abonnement verweist auf ein Azure-Konto, bei dem es sich um eine Identität in Microsoft Entra ID oder einem Verzeichnis handelt, dem Microsoft Entra ID vertraut.
+
+Ein Konto kann mehrere Abonnements umfassen, es ist jedoch nur ein Konto erforderlich.
+
+Über Azure-Abonnements können Sie Grenzen für Azure-Produkte, -Dienste und -Ressourcen definieren. Dabei stehen Ihnen zwei Arten von Abonnementgrenzen zur Verfügung:
+
+**Abrechnungsgrenzen**: Mit diesem Abonnementtyp wird bestimmt, wie die Nutzung von Azure einem Azure-Konto in Rechnung gestellt wird. Es können mehrere Abonnements für verschiedene Arten von Abrechnungsanforderungen erstellt werden. Azure generiert für die einzelnen Abonnements separate Abrechnungsberichte und Rechnungen, die eine Organisation und Verwaltung der Kosten ermöglichen.
+
+**Zugriffssteuerungsgrenzen**: Azure wendet Zugriffsverwaltungsrichtlinien auf Abonnementebene an. Es können Sie separate Abonnements für verschiedene Organisationsstrukturen erstellt werden. Es können beispielsweise innerhalb des Unternehmens unterschiedlichen Abteilungen bestimmte Abonnementrichtlinien zugewiesen werden. Mit diesem Abrechnungsmodell kann der  Zugriff auf die Ressourcen, die Benutzer bereitstellen, mit spezifischen Abonnements verwaltet und gesteuert werden.
+
+<img width="1000" height="589" alt="ms-teams_6PJ9LguBWo" src="https://github.com/user-attachments/assets/2daeaef5-5f81-4194-9079-ed17ec475adb" />
+
+## Azure-Verwaltungsgruppen
+
+Der letzte Aspekt ist die Verwaltungsgruppe. Ressourcen werden in Ressourcengruppen zusammengefasst, und Ressourcengruppen werden in Abonnements zusammengefasst. Diese Hierarchie erscheint Anfängern bereits ausreichend, aber wenn mehrere Entwicklungsteams mehrerer Regionen mit mehreren Anwendungen arbeiten, bedarf es einer Strategie zu effizienten Verwaltung von **Zugriff, Richtlinien und Compliance** für die Abonnements. 
+
+Azure-Verwaltungsgruppen stellen einen abonnementübergreifenden Bereich dar. Sie organisieren Abonnements in Containern, die als Verwaltungsgruppen bezeichnet werden, und wenden Ihre Governancebedingungen auf die Verwaltungsgruppen an. Alle Abonnements innerhalb einer Verwaltungsgruppe **erben** automatisch die Bedingungen, die auf die Verwaltungsgruppe angewandt wurden, ebenso erben Ressourcengruppen die Einstellungen von Abonnements und Ressourcen die von Ressourcengruppen.
+
+Verwaltungsgruppen ermöglichen – unabhängig vom Typ der Abonnements – die unternehmenstaugliche Verwaltung im großen Stil. **Verwaltungsgruppen können geschachtelt werden.**
+
+## Hierarchie aus Verwaltungsgruppen, Abonnements und Ressourcengruppen
+
+Es ist möglich und ratsam, eine flexible Struktur von Verwaltungsgruppen und Abonnements aufzubauen, um ihre Ressourcen für die einheitliche Richtlinien- und Zugriffsverwaltung in einer Hierarchie zu organisieren. Das folgende Diagramm zeigt anhand eines Beispiels das Erstellen einer Hierarchie für die Governance unter Verwendung von Verwaltungsgruppen:
+
+<img width="760" height="470" alt="brave_MRAvKn6KAJ" src="https://github.com/user-attachments/assets/39e96577-e4bf-4cfd-96d0-c4beff63f208" />
+
+Wichtige Fakten zu Verwaltungsgruppen:
+
+- 10.000 Verwaltungsgruppen können in einem einzigen Verzeichnis unterstützt werden.
+- Eine Verwaltungsgruppenstruktur kann bis zu sechs Ebenen unterstützen. Hierbei werden die        Stammebene und die Abonnementebene nicht mitgezählt.
+- Jede Verwaltungsgruppe und jedes Abonnement kann nur über ein übergeordnetes Element verfügen.
