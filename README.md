@@ -130,6 +130,9 @@ Um Load-Balancing zu gewährleisten, weist Azure die Ressourcen innerhalb jeder 
 
 Stellt man eine Ressource in Azure bereit, muss man also oft die Region auswählen, in der die Ressource bereitgestellt werden soll. 
 
+EIne Einsicht in die globale Infrastruktur und die verschiedenen Azure-Regionen findet man unter:
+https://datacenters.microsoft.com/globe/
+
 #### Verfügbarkeitszonen
 
 Verfügbarkeitszonen sind physisch getrennte Rechenzentren in einer Azure-Region. Jede Verfügbarkeitszone besteht aus mindestens einem Rechenzentrum, dessen Stromversorgung, Kühlung und Netzwerkbetrieb unabhängig funktionieren. Sie sind als Isolationsgrenzen eingerichtet. Wenn eine Verfügbarkeitszone ausfällt, arbeitet die andere dennoch weiter. Verfügbarkeitszonen sind über sehr schnelle private Glasfasernetzwerke miteinander verbunden.
@@ -170,3 +173,14 @@ Die Verwaltungsinfrastruktur umfasst Azure-Ressourcen sowie Ressourcengruppen, A
 Eine Ressource ist der grundlegende Baustein in Azure. Alles, was erstellt oder bereitgestellt wird, ist eine Ressource. Dazu gehören VMs, virtuelle Netzwerke, Datenbanken, Container, Virtueller Speicher, Cognitive Services usw...
 
 Ressourcengruppen sind, wie der Name schon sagt, Gruppierungen von Ressourcen. Wird eine Ressource erstellt, muss diese in einer Ressourcengruppe platziert werden. 
+
+Eine Ressourcengruppe kann viele Ressourcen enthalten, aber eine einzelne Ressource kann jeweils nur in einer Ressourcengruppe enthalten sein. Einige Ressourcen werden möglicherweise zwischen Ressourcengruppen verschoben.
+
+Wird eine Ressource in eine neue Gruppe verschoben, ist sie anschließend nicht mehr der ehemaligen Gruppe zugeordnet. Außerdem ist ein schachteln der Ressourcengruppen nicht möglich, d.h Ressourcengruppe B kann nich in die Ressourcengruppe A eingeschlossen werden.
+
+Wird eine Ressourcengruppe gelöscht, so werden alle in ihr enthaltenen Ressourcen gelöscht. 
+
+Ressourcengruppen sollten nach der Struktur bereitgestellt werden, die den jeweiligen Anforderungen am besten entspricht, allgemeingültige Regeln zur verwendung von Ressourcengruppen gibt es nicht. 
+
+## Azure-Abonnements
+
