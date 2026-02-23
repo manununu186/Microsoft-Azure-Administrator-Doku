@@ -219,3 +219,9 @@ Wichtige Fakten zu Verwaltungsgruppen:
 - 10.000 Verwaltungsgruppen können in einem einzigen Verzeichnis unterstützt werden.
 - Eine Verwaltungsgruppenstruktur kann bis zu sechs Ebenen unterstützen. Hierbei werden die        Stammebene und die Abonnementebene nicht mitgezählt.
 - Jede Verwaltungsgruppe und jedes Abonnement kann nur über ein übergeordnetes Element verfügen.
+
+
+## Erstellen einer Ressource in Azure
+
+Loggen Sie sich im Azure-Portal ein, klappen Sie oben links das Portal-Menü auf, navigieren sie zu **Ressourcengruppen** und wählen Sie **Erstellen**
+<img width="1251" height="736" alt="image" src="https://github.com/user-attachments/assets/e9ae27b7-91f6-4e0c-8706-43f9652d9a4b" />
