@@ -16,3 +16,21 @@ Hier stellt Azure die Umgebung bereit, damit Entwickler Apps bauen können, ohne
 
 ## SaaS (Software as a Service):
 Fertige Anwendungen, die über die Cloud laufen. (Wobei Microsoft hier meist auf Microsoft 365 verweist, das eng mit Azure verzahnt ist).
+
+
+
+
+
+
+# Warum nutzt man Azure?
+## Skalierbarkeit: 
+Wenn deine Website plötzlich Millionen von Aufrufen hat, schaltet Azure automatisch mehr Leistung dazu. Wenn der Ansturm vorbei ist, regelt es wieder herunter.
+
+## Globale Reichweite: 
+Microsoft betreibt Rechenzentren in über 60 Regionen weltweit. Das sorgt für geringe Latenzzeiten und Ausfallsicherheit.
+
+## Sicherheit: 
+Microsoft investiert Milliarden in die Cybersicherheit. Für Unternehmen ist es oft sicherer, Daten in der hochgesicherten Azure-Cloud zu speichern als auf einem schlecht gewarteten lokalen Server.
+
+## Hybrid-Cloud: 
+Ein großer Vorteil von Azure ist die nahtlose Verbindung mit lokaler Windows-Infrastruktur (Active Directory, Windows Server).
