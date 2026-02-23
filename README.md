@@ -63,9 +63,54 @@ Microsoft investiert Milliarden in die Cybersicherheit. Für Unternehmen ist es 
 ### Hybrid-Cloud: 
 Ein großer Vorteil von Azure ist die nahtlose Verbindung mit lokaler Windows-Infrastruktur (Active Directory, Windows Server).
 
+<img width="1610" height="908" alt="I0WL1cP7bJ" src="https://github.com/user-attachments/assets/91d63361-55ed-4c26-b525-93297f6f92cf" />
+
 ## Azure-Konten
 Möchte man Azure Dienste erstellen und verwenden benötigt man ein Azure-Abonnement
 Arbeitet man mit seinen eigenen Anwendungen und Geschäftsanforderungen, muss man ein Azure-Konto erstellen. Dabei wird ein Abonnement erstellt.
 Sobald ein Azure-Konto erstellt wurde, können zusätzliche Abonnements erstellt werden. Beispielsweise kann ein Unternehmen ein einzelnes Azure-Konto für das Unternehmen und separate Abonnements für die Entwicklungs-, Marketing- und Vertriebsabteilungen verwenden. Sobald ein Azure-Abonnement erstellt wurde, kann mit dem Erstellen von Azure-Ressourcen innerhalb dieses Abonnements begonnen werden.
 
-<img width="1610" height="908" alt="I0WL1cP7bJ" src="https://github.com/user-attachments/assets/91d63361-55ed-4c26-b525-93297f6f92cf" />
+<img width="755" height="598" alt="brave_INF0lrltkG" src="https://github.com/user-attachments/assets/7a8d6f82-94c4-4203-9a07-1e068a366fc2" />
+
+
+## Interaktion mit Azure
+Mit Azure kann auf unterschiedliche Weise interagiert werden, wie z.B. über das Azure-Webportal oder über die Azure-Befehlszeilenschnittstelle (CLI) mit PowerShell- oder Bash-Befehlen.
+
+### Zugreifen auf das Azure-Portal
+Das Azure-Portal ist eine grafische Benutzeroberfläche (GUI) für die Interaktion mit Azure-Diensten. Hier kann man zu den verschiedenen Dienstbereichen navigieren, Abonnements und Konten verwalten, nach bestimmten Services und Einstellungen suchen etc..
+
+Das Azure Portal erreicht man unter https://portal.azure.com 
+
+<img width="1920" height="997" alt="brave_e5CjdDg0oA" src="https://github.com/user-attachments/assets/94f450b1-67e2-4c59-b172-75c84a83813b" />
+
+Ist die Anmeldung beim Portal erfolgt, kann mithilfe der Schnitstelle zu Azure navigiert werden oder die Befehlszeilenschnittstelle (CLI) mit PowerShell- und BASH-Befehlen verwendet werden.
+
+### Verwenden des Command Line Interface (CLI)
+
+Um über das Azure-Portal auf CloudShell zuzugreifen, wählt man das CloudShell-Symbol aus:
+
+
+<img width="1637" height="72" alt="brave_izNmGqEHFT" src="https://github.com/user-attachments/assets/5d1b8b06-3aa5-4cc3-8010-0e729d5da569" />
+
+Indem man die Schaltfläche "Switch to ... (Zu ... wechseln)" auswählt, bzw. "PWSH" oder "BASH" eingibt, kann man schnell zwischen PowerShell und BASH in der CLI wechseln:
+
+<img width="1055" height="292" alt="brave_LINAkUNvJX" src="https://github.com/user-attachments/assets/5cabc796-cab8-40a9-bb57-1683e3b41976" />
+
+ Tipp:
+Im PowerShell-Modus beginnt die Befehlszeile mit PS. Im BASH-Modus beginnt die Befehlszeile mit Dem Benutzer name@azure.
+
+### Verwenden des interaktiven Azure CLI-Modus
+
+Eine weitere Möglichkeit zur Interaktion ist die Verwendung des interaktiven Modus der Azure-CLI.
+Dadurch wird das Verhalten der CLI so geändert, dass es einer integrierten Entwicklungsumgebung (IDE) ähnelt. Der interaktive Modus bietet Funktionen wie AutoVervollständigen, Befehlsbeschreibungen und sogar Beispiele. Der Interaktive Modus kann hilfreich sein, wenn man die Befehlszeile verwenden möchte, sich aber mit Bash und PowerShell nicht auskennt. 
+
+Geben Sie ```az interactive``` ein, um in den interaktiven Modus zu wechseln.
+
+Entscheiden Sie, ob Telemetriedaten gesendet werden sollen und geben entweder ```NO``` oder ```YES``` ein.
+
+<img width="1078" height="652" alt="brave_Li5BgyB4wd" src="https://github.com/user-attachments/assets/9d27ae6d-7cd8-475d-99f9-53f131ec6da8" />
+
+Nach der Initialisierung können Sie die Pfeiltasten oder die TAB-Taste verwenden, um Ihre Befehle zu vervollständigen. Der interaktive Modus ist speziell für Azure eingerichtet, sodass Sie az nicht eingeben müssen, um einen Befehl zu starten. Verwenden Sie den Befehl ```exit```, um den interaktiven Modus zu verlassen.
+
+
+
