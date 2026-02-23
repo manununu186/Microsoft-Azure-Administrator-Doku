@@ -63,4 +63,9 @@ Microsoft investiert Milliarden in die Cybersicherheit. Für Unternehmen ist es 
 ### Hybrid-Cloud: 
 Ein großer Vorteil von Azure ist die nahtlose Verbindung mit lokaler Windows-Infrastruktur (Active Directory, Windows Server).
 
+## Azure-Konten
+Möchte man Azure Dienste erstellen und verwenden benötigt man ein Azure-Abonnement
+Arbeitet man mit seinen eigenen Anwendungen und Geschäftsanforderungen, muss man ein Azure-Konto erstellen. Dabei wird ein Abonnement erstellt.
+Sobald ein Azure-Konto erstellt wurde, können zusätzliche Abonnements erstellt werden. Beispielsweise kann ein Unternehmen ein einzelnes Azure-Konto für das Unternehmen und separate Abonnements für die Entwicklungs-, Marketing- und Vertriebsabteilungen verwenden. Sobald ein Azure-Abonnement erstellt wurde, kann mit dem Erstellen von Azure-Ressourcen innerhalb dieses Abonnements begonnen werden.
+
 <img width="1610" height="908" alt="I0WL1cP7bJ" src="https://github.com/user-attachments/assets/91d63361-55ed-4c26-b525-93297f6f92cf" />
