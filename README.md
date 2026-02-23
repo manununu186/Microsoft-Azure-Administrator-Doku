@@ -153,3 +153,20 @@ Verfügbarkeitszonen sind in erster Linie für virtuelle Computer, verwaltete Da
 Selbst mit der zusätzlichen Resilienz, die Verfügbarkeitszonen bieten, ist es möglich, dass ein Ereignis so groß sein könnte, dass es sich auf mehrere Verfügbarkeitszonen in einer einzelnen Region auswirkt. Um die Resilienz noch weiter zu steigern, bietet Azure Regionspaare.
 
 #### Regionspaare
+
+Die meisten Azure-Regionen werden mit einer anderen Region, die mindestens 480 km (300 Meilen) entfernt ist, innerhalb derselben Geografie (z. B. USA, Europa oder Asien) kombiniert. Dieser Ansatz ermöglicht die Replikation von Ressourcen innerhalb einer Geografie bei gleichzeitiger Verringerung der Wahrscheinlichkeit, dass Naturkatastrophen, Unruhen, Stromausfälle oder physische Netzwerkausfälle eine gesamte Region betreffen. Wenn eine Region in einem Paar beispielsweise von einer Naturkatastrophe betroffen ist, würden Dienste automatisch ein Failover in eine andere Region im zugehörigen Regionspaar ausführen.
+
+Beispiele für Regionspaare in Azure sind „USA, Westen“ kombiniert mit „USA, Osten“ oder „Asien, Südosten“ kombiniert mit „Asien, Osten“. Da das Regionspaar direkt verbunden und dennoch weit genug voneinander entfernt ist, um im Fall regionaler Katastrophen nicht betroffen zu sein, können Sie damit zuverlässige Dienste und Datenredundanz gewährleisten.
+
+<img width="1075" height="596" alt="brave_eymK5l90uv" src="https://github.com/user-attachments/assets/f7288940-ff6d-4388-9f5b-5ad2216762ea" />
+
+
+## Die Verwaltungsinfrastruktur von Azure
+
+Die Verwaltungsinfrastruktur umfasst Azure-Ressourcen sowie Ressourcengruppen, Abonnements und Konten. Das Verständnis der hierarchischen Struktur hilft dabei, Projekte und Produkte in Azure zu planen.
+
+### Azure-Ressourcen und -Ressourcengruppen
+
+Eine Ressource ist der grundlegende Baustein in Azure. Alles, was erstellt oder bereitgestellt wird, ist eine Ressource. Dazu gehören VMs, virtuelle Netzwerke, Datenbanken, Container, Virtueller Speicher, Cognitive Services usw...
+
+Ressourcengruppen sind, wie der Name schon sagt, Gruppierungen von Ressourcen. Wird eine Ressource erstellt, muss diese in einer Ressourcengruppe platziert werden. 
