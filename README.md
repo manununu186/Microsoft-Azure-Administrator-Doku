@@ -46,7 +46,7 @@ Das Dienstmodell bestimmt die Verantwortung für Dinge wie:
 Wenn eine Website des Kunden plötzlich Millionen von Aufrufen hat, schaltet Azure automatisch mehr Leistung dazu. Wenn der Ansturm vorbei ist, regelt es wieder herunter.
 
 ### Kosteneffizienz
-Beim Cloud Computing werden Computingdienste mit einem nutzungsbasierten Preismodell über das Internet bereitgestellt. In der Regel bezahlt man nur für die Clouddienste, die Sie auch wirklich verwenden.
+Beim Cloud Computing werden Computingdienste mit einem nutzungsbasierten Preismodell über das Internet bereitgestellt. In der Regel bezahlt man nur für die Clouddienste, die man auch wirklich verwendet.
 Ein solches nutzungsbasiertes Modell bietet viele Vorteile, wie etwa:
 
 - Keine Vorlaufkosten
