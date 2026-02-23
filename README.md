@@ -62,3 +62,5 @@ Microsoft investiert Milliarden in die Cybersicherheit. Für Unternehmen ist es 
 
 ### Hybrid-Cloud: 
 Ein großer Vorteil von Azure ist die nahtlose Verbindung mit lokaler Windows-Infrastruktur (Active Directory, Windows Server).
+
+<img width="1610" height="908" alt="I0WL1cP7bJ" src="https://github.com/user-attachments/assets/91d63361-55ed-4c26-b525-93297f6f92cf" />
