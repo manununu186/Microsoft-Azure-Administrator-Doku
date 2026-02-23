@@ -19,6 +19,7 @@ Fertige Anwendungen, die über die Cloud laufen. (Wobei Microsoft hier meist auf
 
 
 
+<img width="1077" height="637" alt="brave_Y1wd1zCtuV" src="https://github.com/user-attachments/assets/344f71e6-9e45-4c6f-b64f-f37422df8349" />
 
 
 
