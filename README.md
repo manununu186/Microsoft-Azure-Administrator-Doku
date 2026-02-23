@@ -83,7 +83,7 @@ Das Azure Portal erreicht man unter https://portal.azure.com
 
 <img width="1920" height="997" alt="brave_e5CjdDg0oA" src="https://github.com/user-attachments/assets/94f450b1-67e2-4c59-b172-75c84a83813b" />
 
-Ist die Anmeldung beim Portal erfolgt, kann mithilfe der Schnitstelle zu Azure navigiert werden oder die Befehlszeilenschnittstelle (CLI) mit PowerShell- und BASH-Befehlen verwendet werden.
+Ist die Anmeldung beim Portal erfolgt, kann mithilfe der Schnitstelle zu Azure navigiert werden oder die Befehlszeilenschnittstelle (CLI) mit **PowerShell**- und **BASH**-Befehlen verwendet werden.
 
 ### Verwenden des Command Line Interface (CLI)
 
@@ -102,7 +102,7 @@ Im PowerShell-Modus beginnt die Befehlszeile mit PS. Im BASH-Modus beginnt die B
 ### Verwenden des interaktiven Azure CLI-Modus
 
 Eine weitere Möglichkeit zur Interaktion ist die Verwendung des interaktiven Modus der Azure-CLI.
-Dadurch wird das Verhalten der CLI so geändert, dass es einer integrierten Entwicklungsumgebung (IDE) ähnelt. Der interaktive Modus bietet Funktionen wie AutoVervollständigen, Befehlsbeschreibungen und sogar Beispiele. Der Interaktive Modus kann hilfreich sein, wenn man die Befehlszeile verwenden möchte, sich aber mit Bash und PowerShell nicht auskennt. 
+Dadurch wird das Verhalten der CLI so geändert, dass es einer integrierten Entwicklungsumgebung (IDE) ähnelt. Der interaktive Modus bietet Funktionen wie **AutoVervollständigen**, **Befehlsbeschreibungen** und sogar **Beispiele**. Der Interaktive Modus kann hilfreich sein, wenn man die Befehlszeile verwenden möchte, sich aber mit Bash und PowerShell nicht auskennt. 
 
 Geben Sie ```az interactive``` ein, um in den interaktiven Modus zu wechseln.
 
@@ -113,4 +113,43 @@ Entscheiden Sie, ob Telemetriedaten gesendet werden sollen und geben entweder ``
 Nach der Initialisierung können Sie die Pfeiltasten oder die TAB-Taste verwenden, um Ihre Befehle zu vervollständigen. Der interaktive Modus ist speziell für Azure eingerichtet, sodass Sie az nicht eingeben müssen, um einen Befehl zu starten. Verwenden Sie den Befehl ```exit```, um den interaktiven Modus zu verlassen.
 
 
+## Die physische Infrastruktur von Azure
+Im Rahmen von Microsoft Azure fallen ständig Begriffe wie "Regionen", "Verfügbarkeitszonen", "Ressourcen", "Abbonements", etc. Wichtig ist es, zunächst die Kernkomponenten der Azure-Architektur zu verstehen. Diese können in zweit primäre Gruppen unterteilt werden:
+Die **physische Infrastruktur** und die **Verwaltungsinfrastruktur**.
 
+### Physische Infrastruktur
+
+Die physische Infrastruktur von Azure beginnt mit Rechenzentren, also große Einrichtungen mit Hardware-Ressourcen, die in Racks angeordnet sind und über dedizierte Energie-, Kühl- und Netzwerkinfrastruktur verfügen. 
+
+Azure verfügt weltweit über Rechenzentren, die in Azure-Regionen und Azure-Verfügbarkeitszonen gruppiert werden. 
+
+#### Regionen
+
+Mit "Region" ist ein geographischer Bereich auf der Erde gemeint, in dem sich mindestens ein, möglicherweise jedoch mehrere, nicht weit voneinander entfernt liegende Rechenzentren befinden, die über ein  Netzwerk mit geringer Latenz miteinander verbunden sind. 
+Um Load-Balancing zu gewährleisten, weist Azure die Ressourcen innerhalb jeder Region auf intelligente Weise zu und kontrolliert sie. 
+
+Stellt man eine Ressource in Azure bereit, muss man also oft die Region auswählen, in der die Ressource bereitgestellt werden soll. 
+
+#### Verfügbarkeitszonen
+
+Verfügbarkeitszonen sind physisch getrennte Rechenzentren in einer Azure-Region. Jede Verfügbarkeitszone besteht aus mindestens einem Rechenzentrum, dessen Stromversorgung, Kühlung und Netzwerkbetrieb unabhängig funktionieren. Sie sind als Isolationsgrenzen eingerichtet. Wenn eine Verfügbarkeitszone ausfällt, arbeitet die andere dennoch weiter. Verfügbarkeitszonen sind über sehr schnelle private Glasfasernetzwerke miteinander verbunden.
+
+<img width="507" height="505" alt="brave_j6KHwhCtih" src="https://github.com/user-attachments/assets/a22ad2f1-9824-4199-9146-3f0f0faf5ae7" />
+
+**Warum sind Verfügbarkeitszonen wichtig?**
+
+Um sicherzustellen, dass Dienste und Daten einer Anwendung **redundant** sind, und Informationen geschützt sind, falls Fehler auftreten ist es wichtig, dass die zugrundeliegenden Hardwareumgebungen in **zweifacher Ausführung** eingerichtet sind. Hier kommen Verfügbarkeitszonen ins Spiel. 
+
+Compute-, Speicher-, Netzwerk-, und Datenressourcen werden in einer Verfügbarkeitszone bereitgestellt und in andere Verfügbarkeitszonen **repliziert**. Somit wird für **Hochverfügbarkeit** der App gesorgt
+
+Verfügbarkeitszonen sind in erster Linie für virtuelle Computer, verwaltete Datenträger, Lastenausgleiche und SQL-Datenbanken gedacht. Azure-Dienste, die Verfügbarkeitszonen unterstützen, können in drei Kategorien unterteilt werden:
+
+**Zonale Dienste:** Sie weisen die Ressource fest einer bestimmten Zone zu (z. B. virtuelle Computer, verwaltete Datenträger oder IP-Adressen).
+
+**Zonenredundante Dienste:** Die Plattform repliziert automatisch zonenübergreifend (z. B. zonenredundanter Speicher oder SQL-Datenbank).
+
+**Nicht regionale Dienste:** Dienste sind immer in Azure-Geografien verfügbar und sowohl gegen zonenweite als auch regionsweite Ausfälle resilient.
+
+Selbst mit der zusätzlichen Resilienz, die Verfügbarkeitszonen bieten, ist es möglich, dass ein Ereignis so groß sein könnte, dass es sich auf mehrere Verfügbarkeitszonen in einer einzelnen Region auswirkt. Um die Resilienz noch weiter zu steigern, bietet Azure Regionspaare.
+
+#### Regionspaare
