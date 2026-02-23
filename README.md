@@ -184,3 +184,7 @@ Ressourcengruppen sollten nach der Struktur bereitgestellt werden, die den jewei
 
 ## Azure-Abonnements
 
+Abonnements sind in Azure eine Einheit für die **Verwaltung, Abrechnung und Skalierung**. Ähnlich wie Ressourcengruppen bieten sie eine Möglichkeit, Ressourcen logisch zu organisieren. Außerdem können mit Abonnements Ressourcengruppen logisch organisiert werden, um die Abrechnung zu vereinfachen.
+
+<img width="817" height="337" alt="brave_oqNCOPqwZb" src="https://github.com/user-attachments/assets/9062ad7e-5065-4069-a600-e0a13455cebe" />
+
