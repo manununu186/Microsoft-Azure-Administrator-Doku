@@ -287,3 +287,11 @@ Auf dem Azure-Marketplace kann man Azure-Basierte Lösungen und Dienste von **Dr
 Erwirbt man Produkte über den Marketplace, so bezahlt man möglicherweise auch Dienste eines Drittanbieters, der selbst die Abrrechnungsstrukturen festlegt. 
 
 Alle in Azure Marketplace verfügbaren Lösungen sind zertifiziert und entsprechen Azure-Richtlinien und -Standards. Die Zertifizierungsrichtlinien können je nach Dienst- oder Lösungstyp und Azure-Dienst variieren. Zertifizierungsrichtlinien für kommerzielle Marketplaces verfügen über zusätzliche Informationen zu Azure Marketplace-Zertifizierungen.
+
+
+## Preisrechner
+
+Mit dem in Azure integrierten Preisrechner lassen sich Beispielszenarios erstellen und die Kosten aller bereitgestellten Ressourcen einschließlich Berechnung, Speicher und Netzwerk. Es werden sogar verschiedene Speicheroptionen wie Speichertyp, Zugriffsebene und Redundanz berücksichtigt.
+
+<img width="1076" height="443" alt="brave_qlH3BhMPAt" src="https://github.com/user-attachments/assets/92fd86f2-f800-4faf-85d4-b30bd63f5cfb" />
+
