@@ -291,7 +291,7 @@ Alle in Azure Marketplace verfügbaren Lösungen sind zertifiziert und entsprech
 
 ## Preisrechner
 
-Mit dem in Azure integrierten Preisrechner lassen sich Beispielszenarios erstellen und die Kosten aller bereitgestellten Ressourcen einschließlich Berechnung, Speicher und Netzwerk. Es werden sogar verschiedene Speicheroptionen wie Speichertyp, Zugriffsebene und Redundanz berücksichtigt.
+Mit dem in Azure integrierten Preisrechner lassen sich Beispielszenarios erstellen und die Kosten aller bereitgestellten Ressourcen einschließlich Berechnung, Speicher und Netzwerk berechnen. Es werden sogar verschiedene Speicheroptionen wie Speichertyp, Zugriffsebene und Redundanz berücksichtigt.
 
 <img width="1076" height="443" alt="brave_qlH3BhMPAt" src="https://github.com/user-attachments/assets/92fd86f2-f800-4faf-85d4-b30bd63f5cfb" />
 
