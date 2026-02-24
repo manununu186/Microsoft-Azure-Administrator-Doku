@@ -295,3 +295,29 @@ Mit dem in Azure integrierten Preisrechner lassen sich Beispielszenarios erstell
 
 <img width="1076" height="443" alt="brave_qlH3BhMPAt" src="https://github.com/user-attachments/assets/92fd86f2-f800-4faf-85d4-b30bd63f5cfb" />
 
+## Das Microsoft Cost Managament-Tool
+
+Die Kostenverwaltung bietet die Möglichkeit, Azure-Ressourcenkosten schnell zu überprüfen, Warnungen basierend auf Ressourcenausgaben zu erstellen und Budgets zu erstellen, mit denen die Verwaltung von Ressourcen automatisiert werden kann.
+
+Die Kostenanalyse ist eine Teilmenge der Kostenverwaltung, die eine schnelle Übersicht über Azure-Kosten bereitstellt. Mithilfe der Kostenanalyse können die Gesamtkosten auf unterschiedliche Weise schnell anzeigt werden, einschließlich Abrechnungszyklus, Region, Ressource usw.
+
+<img width="1073" height="778" alt="brave_f9q7KLs5FY" src="https://github.com/user-attachments/assets/94e48374-3d0e-4997-b8e7-7400c25e5d6e" />
+
+Mit der Kostenanalyse werden die Organisationskosten analysiert. Ausgabetrends werden identifiziert, akkumulierte kosten lassen sich anzeigen. Man kann monatliche, vierteljährliche oder jährliche Kostentrends im Vergleich zum Budget stellen. 
+
+## Kostenwarnungen
+
+Kostenwarnungen bieten einen einzigen Ort, um schnell alle verschiedenen Warnungstypen zu überprüfen, die im Kostenverwaltungsdienst angezeigt werden können. Die drei Arten von Warnungen, die angezeigt werden können, sind:
+
+- Budgetwarnungen
+- Kreditwarnungen
+- Warnungen bei Ausgabenkontingenten für Abteilungen.
+
+## Haushaltspläne
+
+Es lassen sich Ausgabelimits für Azure einstellen. Man kann Budgets auf Basis eines Abonnements, einer Ressourcengruppe, einem Diensttyp oder anderen Kriterien Festlegen. 
+
+<img width="647" height="842" alt="brave_cDGi4dViID" src="https://github.com/user-attachments/assets/48f72c32-00d1-454a-954a-1fb06afe525b" />
+
+
+
