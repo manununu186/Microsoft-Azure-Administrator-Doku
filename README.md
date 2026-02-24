@@ -221,7 +221,69 @@ Wichtige Fakten zu Verwaltungsgruppen:
 - Jede Verwaltungsgruppe und jedes Abonnement kann nur über ein übergeordnetes Element verfügen.
 
 
-## Erstellen einer Ressource in Azure
+## Was kostet Azure? 
 
-Loggen Sie sich im Azure-Portal ein, klappen Sie oben links das Portal-Menü auf, navigieren sie zu **Ressourcengruppen** und wählen Sie **Erstellen**
-<img width="1251" height="736" alt="image" src="https://github.com/user-attachments/assets/e9ae27b7-91f6-4e0c-8706-43f9652d9a4b" />
+Die Frage was Azure kostet hängt von einigen Faktoren ab, wie etwa:
+
+- Die verwendeten Dienste
+- Den Workloads
+- Netzwerk- und Speicheranforderungen
+- Standort
+- Supportoptionen
+
+Der Azure Advisor und festlegbare Ausgabenlimits können helfen um die Kosten zu planen und versehentliche Kostenüberschreitungen zu vermeiden.
+
+### Ressourcentyp
+
+Die Kosten der einzelnen Azure-Ressourcen werden von einer Reihe von Faktoren beeinflusst.
+Dazu gehören sowohl der Ressourcentyp, die Einstellungen für die Ressource und die Azure-Region.
+Azure berechnet die Kosten aus einem Verwendungsdatensatz, der sich aus diesen Faktoren ergibt. 
+
+#### Beispiele
+
+- Beim Bereitstellen eines Speicherkontos werden Typ (z.B. Blob), eine Leistungsebene, eine Zugriffstufe, Redundanzeinstellungen und eine Region angegeben. Das Erstellen dessselben Speicherkontos in verschiedenen Regionen oder Änderungen an den Einstellungen können sich auf den Preis dieser Ressource auswirken.
+<img width="1074" height="474" alt="Speicherkonto Einstellungen" src="https://github.com/user-attachments/assets/deb1c44e-931f-4c2d-870e-4aaa8a017a7e" />
+
+
+
+- Beim Bereitstellen einer VM fallen sowohl die Lizensierung für das OS oder andere Software, den Prozessor und die Anzahl der Kerne für die VM, den angefügten Speicher und die Netzwerkschnitstelle(n) ins Gewicht. Genau wie beim Speicherkonto kann die Bereitstellung derselben Maschine in verschiedenen Regionen zu unterschiedlichen Kosten führen.
+<img width="860" height="789" alt="brave_42ExeraBY8" src="https://github.com/user-attachments/assets/c5f7c39d-5209-4e37-b4e8-2ce071b18f6b" />
+
+
+
+### Verbrauch
+
+Das Standard-Zahlungsmodell beim Cloud-Hosting ist **Pay-as-you-go**, d.h. man bezahlt die Ressourcen, die während eines Abrechnungszyklus verwendet werden. Verwendet man in einem Zyklus mehr Rechenleistung, wird auch mehr bezahlt, vice versa. Dieser unkomplizierte Preismechnanismus ermöglicht maximale Flexibilität und Skalierbarkeit. 
+
+Azure bietet außerdem auch die Möglichkeit, eine bestimmte Menge von Cloudressourcen zu **reservieren**. Man verpflichet sich auf eine Nutzungsniveau, erhält dafür aber auch Rabatte. 
+
+Diese Modelle lassen sich auch kombinieren. Man reserviert eine bestimmte Menge von Azure-ressourcen zum Festpreis, steigt plötzlich die Nachfrage an, so kann man **Pay-as-you-go** als Unterstützung verwenden und zahlt dann nur noch die zusätzlichen Ressourcen. So sorgt man für einen konsistenten Workload und hat trotzdem die Flexibilität, bei Bedarf schnell die Ressourcen zu erhöhen.
+
+### Instandhaltung
+
+Es ist wichtig, die verwendeten Ressourcen im Auge zu behalten und sicherzustellen, das nicht mehr benötigte Ressourcen entfernt werden. Beispielsweise kann es passieren, dass die Bereitstellung einer VM aufgehoben wird, aber die zusätzlchen Ressourcen die zu ihrer  Bereitstellung benötigt wurden (Speicher; Netzwerk) unabsichtlich noch verfügbar bleiben. 
+
+### Geographie
+
+Die Kosten für Energie, Arbeit, Steuern und Gebühren variieren je nach Standort. Aufgrund dieser Unterschiede können die Bereitstellungskosten von Azure-Ressourcen je nach Region variieren.
+
+Der Netzwerkdatenverkehr wird auch basierend auf der Geografie beeinflusst. So ist es beispielsweise kostengünstiger, Informationen innerhalb Europas zu verschieben, als Informationen aus Europa nach Asien oder Südamerika zu verschieben.
+
+### Datenverkehr
+
+Abrechnungszonen sind ein Faktor bei der Ermittlung der Kosten einiger Azure-Dienste.
+
+Bandbreite bezieht sich auf Daten, die sich in und aus Azure-Rechenzentren bewegen. Einige eingehende Datenübertragungen (Daten, die in Azure-Rechenzentren gehen) sind kostenlos. Bei ausgehenden Datenübertragungen (Daten, die Azure-Rechenzentren verlassen), basiert der Preis für die Datenübertragung auf Zonen.
+
+## Abonnementtyp
+
+Einige Azure-Abonnementtypen umfassen auch Nutzungszertifikate, die sich auf Kosten auswirken.
+
+Beispielsweise bietet ein kostenloses Azure-Testabonnement Zugriff auf eine Reihe von Azure-Produkten, die 12 Monate lang kostenlos sind. Sie umfasst auch die Gutschrift, die innerhalb der ersten 30 Tage nach der Registrierung verbraucht werden können. Zugriff auf mehr als 25 Produkte, die immer kostenlos sind (basierend auf der Ressourcen- und Regionsverfügbarkeit).
+
+## Azure Marketplace & Drittanbieter-Lösungen
+
+Auf dem Azure-Marketplace kann man Azure-Basierte Lösungen und Dienste von **Drittanbietern** erwerben. Dies kann ein Server mit vorinstallierter und konfigurierter Software oder verwalteten Netzwerkfirewall-Appliances oder Connectors zu Sicherungsdiensten von Drittanbietern sein.
+Erwirbt man Produkte über den Marketplace, so bezahlt man möglicherweise auch Dienste eines Drittanbieters, der selbst die Abrrechnungsstrukturen festlegt. 
+
+lle in Azure Marketplace verfügbaren Lösungen sind zertifiziert und entsprechen Azure-Richtlinien und -Standards. Die Zertifizierungsrichtlinien können je nach Dienst- oder Lösungstyp und Azure-Dienst variieren. Zertifizierungsrichtlinien für kommerzielle Marketplaces verfügen über zusätzliche Informationen zu Azure Marketplace-Zertifizierungen.
