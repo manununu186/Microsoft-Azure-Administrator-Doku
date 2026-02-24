@@ -319,5 +319,35 @@ Es lassen sich Ausgabelimits für Azure einstellen. Man kann Budgets auf Basis e
 
 <img width="647" height="842" alt="brave_cDGi4dViID" src="https://github.com/user-attachments/assets/48f72c32-00d1-454a-954a-1fb06afe525b" />
 
+Eine fortgeschrittenere Nutzung von Budgets ermöglicht es, dass Budgetbedingungen Automatisierungen auslösen, die Ressourcen anhalten oder anderweitig ändern, sobald die Auslösebedingung eingetreten ist.
+
+## Tags
+
+Ressourcentags sind Metadaten zur Organisation von Cloud-Ressourcen, die dabei helfen, Verwaltung, Kostenkontrolle, Sicherheit und Automatisierung durch gezielte Kategorisierung effizienter zu gestalten.
+
+<img width="1075" height="497" alt="brave_xz3gy1RvQh" src="https://github.com/user-attachments/assets/5363254f-0524-433a-bffc-822116c9b35d" />
+
+### Verwaltung von Ressourcentags
+
+Die Verwaltung von Tags erfolgt flexibel über verschiedene Tools, erfordert jedoch eine aktive Strategie, da keine automatische Vererbung stattfindet.
+
+Hier sind die Kernpunkte zusammengefasst:
+
+- Vielfältige Werkzeuge: Tags können manuell im Azure-Portal oder automatisiert über die CLI, PowerShell, REST-API und ARM-Templates verwaltet werden.
+
+- Keine automatische Vererbung: Ressourcen übernehmen Tags nicht automatisch von ihren übergeordneten Ressourcengruppen oder Abonnements. Das ermöglicht zwar individuelle Schemas auf jeder Ebene, erfordert aber Disziplin bei der Zuweisung.
+
+- Erzwingung durch Azure Policy: Um Wildwuchs zu vermeiden, lassen sich mit Azure Policies Regeln festlegen, die bestimmte Tags bei der Erstellung erzwingen oder gelöschte Tags automatisch wiederherstellen.
+
+
+<img width="1062" height="389" alt="brave_ltBOZlia7b" src="https://github.com/user-attachments/assets/8076050e-9e4c-40df-9db2-2856f35c8b92" />
+<img width="1064" height="977" alt="brave_ZX4SRADkgD" src="https://github.com/user-attachments/assets/199d2c3f-752b-461a-ad09-f28a7de72309" />
+
+Ein Ressourcentag besteht aus einem Namen und einem Wert. Sie können jeder Azure-Ressource ein oder mehrere Tags zuweisen.
+
+#
+#
+#
+#### Das sind die Grundlegenden Informationen zum Verständnis von Microsoft Azure!
 
 
